@@ -19,8 +19,8 @@ public class Funcionario {
 		this.salario = valor - (valor * 0.06) + valorHoraExtra;
 	}
 
-	public void bonifica(double valor) {
-		salario += valor;
+	public double bonifica() {
+		return salario * 0.10;
 	}
 
 	public void demite() {

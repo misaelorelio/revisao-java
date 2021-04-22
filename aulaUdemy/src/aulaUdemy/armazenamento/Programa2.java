@@ -16,14 +16,18 @@ public class Programa2 {
 		g1.estaNaEmpresa = true;
 		g1.setLogin("123");
 		g1.setSenha("123");
+		g1.setSalario(5000.0);
 		
 		g1.autentica("123", "124");		
 		
 		System.out.println(f1.getSalario());
+		System.out.println(f1.bonifica());
 		System.out.println(f1.getRg());
 		System.out.println(g1.getDataEntrada());
 		System.out.println(g1.nome);
 		System.out.println(g1.departamento);
+		System.out.println(g1.bonifica());
+		System.out.println(g1.getSalario());
 	}
 
 }

@@ -22,6 +22,9 @@ package aulaUdemy.armazenamento;
 		public void setSenha(String senha) {
 			this.senha = senha;
 		}
+		public double bonifica() {
+			return salario * 0.15;
+		}
 
 		public void autentica(String login, String senha) {
 			if((this.login == login) && (this.senha == senha)){
