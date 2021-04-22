@@ -2,13 +2,13 @@ package aulaUdemy.armazenamento;
 
 public class Funcionario {
 
-	private String nome;
-	private String departamento;
-	private double salario;
-	private String dataEntrada;
-	private String rg;
-	private boolean estaNaEmpresa;
-	private double ganhoAnual;
+	protected String nome;
+	protected String departamento;
+	protected double salario;
+	protected String dataEntrada;
+	protected String rg;
+	protected boolean estaNaEmpresa;
+	protected double ganhoAnual;
 
 	void calculaSalario(double valor) {
 		this.salario = valor - (valor * 0.06);

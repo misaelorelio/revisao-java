@@ -9,8 +9,21 @@ public class Programa2 {
 		f1.setDepartamento("Estágiario");
 		f1.calculaSalario(1000, 2);
 		
+		Gerente g1 = new Gerente(); 
+		g1.departamento = "vendas";
+		g1.setDataEntrada("12/32/4321");
+		g1.nome = "Misael";
+		g1.estaNaEmpresa = true;
+		g1.setLogin("123");
+		g1.setSenha("123");
+		
+		g1.autentica("123", "124");		
+		
 		System.out.println(f1.getSalario());
 		System.out.println(f1.getRg());
+		System.out.println(g1.getDataEntrada());
+		System.out.println(g1.nome);
+		System.out.println(g1.departamento);
 	}
 
 }
