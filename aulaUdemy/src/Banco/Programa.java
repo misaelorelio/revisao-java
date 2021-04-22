@@ -50,8 +50,8 @@ public class Programa {
 		System.out.println(funcionario.ganhoAnual());*/
 		
 		Cliente cliente = new Cliente();
-		cliente.nome = "Misael";
-		cliente.cpf = "0920202020";
+		cliente.setNome("Misael"); 
+		cliente.setCpf("212121");
 		
 		Conta conta = new Conta();
 		conta.setNumeroConta (123);
@@ -59,8 +59,8 @@ public class Programa {
 		conta.setSaldo(1000); 
 		
 		
-		System.out.println(conta.getTitular().nome);
-		System.out.println(conta.getTitular().cpf);
+		System.out.println(conta.getTitular().getCpf());
+		System.out.println(conta.getTitular().getNome());
 		System.out.println(conta.getNumeroConta());
 		System.out.println(conta.getSaldo());
 		
