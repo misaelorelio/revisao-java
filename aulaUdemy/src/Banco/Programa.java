@@ -54,17 +54,15 @@ public class Programa {
 		cliente.cpf = "0920202020";
 		
 		Conta conta = new Conta();
-		conta.numeroConta = 123;
-		conta.titular = cliente;
-		conta.saldo = 2000.0;
+		conta.setNumeroConta (123);
+		conta.setTitular(cliente);
+		conta.setSaldo(1000); 
 		
 		
-		System.out.println(conta.titular);
-		System.out.println(conta.titular.nome);
-		System.out.println(conta.titular.cpf);
-		System.out.println(conta.saldo);
-		System.out.println(conta.numeroConta);
-		
+		System.out.println(conta.getTitular().nome);
+		System.out.println(conta.getTitular().cpf);
+		System.out.println(conta.getNumeroConta());
+		System.out.println(conta.getSaldo());
 		
 		
 		
