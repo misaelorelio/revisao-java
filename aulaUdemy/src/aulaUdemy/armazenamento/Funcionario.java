@@ -10,13 +10,27 @@ public class Funcionario {
 	protected boolean estaNaEmpresa;
 	protected double ganhoAnual;
 
-	void calculaSalario(double valor) {
-		this.salario = valor - (valor * 0.06);
+	public Boolean calculaSalario() {
+		if (this.salario <= 1300) {
+			this.salario = this.salario - (this.salario * 0.06);
+			return true;
+		} else {
+			System.out.println("Valor inválido");
+			return false;
+		}
+
 	}
 
-	public void calculaSalario(double valor, double horaExtra) {
-		double valorHoraExtra = (valor / 30) / 8 * horaExtra;
-		this.salario = valor - (valor * 0.06) + valorHoraExtra;
+	public Boolean calculaSalario(double horaExtra) {
+		if (this.salario <= 1300) {
+			double valorHoraExtra = (this.salario / 30) / 8 * horaExtra;
+			this.salario = this.salario - (this.salario * 0.06) + valorHoraExtra;
+			return true;
+		} else {
+			System.out.println("Valor inválido");
+			return false;
+		}
+
 	}
 
 	public double bonifica() {
@@ -86,6 +100,5 @@ public class Funcionario {
 	public void setGanhoAnual(double ganhoAnual) {
 		this.ganhoAnual = ganhoAnual;
 	}
-	
 
 }

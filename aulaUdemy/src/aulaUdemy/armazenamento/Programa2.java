@@ -7,7 +7,8 @@ public class Programa2 {
 		Funcionario f1 = new Funcionario();
 		f1.setRg("212121212");
 		f1.setDepartamento("Estágiario");
-		f1.calculaSalario(1000, 2);
+		f1.salario = 1299.0;
+		f1.calculaSalario();
 		
 		Gerente g1 = new Gerente(); 
 		g1.departamento = "vendas";
