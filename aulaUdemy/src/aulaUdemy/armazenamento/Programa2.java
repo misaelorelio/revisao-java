@@ -22,8 +22,8 @@ public class Programa2 {
 		g1.autentica("123", "123");	
 		
 		Controle controle = new Controle();
-		controle.setTotalBonus(f1.bonifica());
-		controle.setTotalBonus(g1.bonifica());
+		controle.totalBonus(f1);
+		controle.totalBonus(g1);
 			
 	
 		

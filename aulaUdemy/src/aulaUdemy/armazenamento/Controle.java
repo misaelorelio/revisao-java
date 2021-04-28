@@ -4,8 +4,12 @@ public class Controle {
 
 	private Double totalBonus;
 	
-	public Double totalBonus(double valor) {
-		return this.totalBonus = this.totalBonus + valor;
+	public Double totalBonus(Funcionario funcionario) {
+		return this.totalBonus = this.totalBonus + funcionario.bonifica();
+	}
+	
+	public Double totalBonus(Gerente gerente) {
+		return this.totalBonus = this.totalBonus + gerente.bonifica();
 	}
 
 	public Double getTotalBonus() {
