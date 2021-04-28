@@ -8,7 +8,7 @@ public class Programa2 {
 		f1.setRg("212121212");
 		f1.setDepartamento("Estágiario");
 		f1.salario = 1299.0;
-		f1.calculaSalario();
+		//f1.calculaSalario();
 		
 		Gerente g1 = new Gerente(); 
 		g1.departamento = "vendas";
@@ -19,16 +19,26 @@ public class Programa2 {
 		g1.setSenha("123");
 		g1.setSalario(5000.0);
 		
-		g1.autentica("123", "124");		
+		g1.autentica("123", "123");	
+		
+		Controle controle = new Controle();
+		controle.setTotalBonus(f1.bonifica());
+		controle.setTotalBonus(g1.bonifica());
+			
+	
 		
 		System.out.println(f1.getSalario());
 		System.out.println(f1.bonifica());
 		System.out.println(f1.getRg());
+		
+		
 		System.out.println(g1.getDataEntrada());
 		System.out.println(g1.nome);
 		System.out.println(g1.departamento);
 		System.out.println(g1.bonifica());
 		System.out.println(g1.getSalario());
+		
+		System.out.println(controle.getTotalBonus());
 	}
 
 }
