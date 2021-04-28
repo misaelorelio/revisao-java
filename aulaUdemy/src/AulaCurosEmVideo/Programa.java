@@ -4,12 +4,17 @@ public class Programa {
 
 	public static void main(String[] args) {
 		
-		Mamifero x = new Mamifero();
-		x.emitirSom();
+		Cachorro cachorro = new Cachorro();
+		cachorro.reagir(true);
+		cachorro.reagir(false);
+		cachorro.reagir("Olá");
+		cachorro.reagir("Vai apanhar");
+		cachorro.reagir(11, 45);
+		cachorro.reagir(21, 00);
+		cachorro.reagir(2, 12.5);
+		cachorro.reagir(17, 4.5);
 		
-		Lobo y = new Lobo();
-		y.emitirSom();
-
+		
 	}
 
 }
