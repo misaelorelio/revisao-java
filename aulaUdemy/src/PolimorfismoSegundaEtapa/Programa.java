@@ -11,7 +11,11 @@ public class Programa {
 		mamifero.emitirSom();
 		
 		System.out.println(mamifero.idade);
-
+		
+		Reptil r = new Reptil();
+		r.alimentar();
+		r.emitirSom();
+		r.locomover();
 	}
 
 }
