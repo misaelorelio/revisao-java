@@ -1,6 +1,6 @@
 package PolimorfismoSegundaEtapa;
 
-public class Reptil {
+public class Reptil extends Animal {
 
 	private String corEscama;
 

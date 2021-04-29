@@ -15,7 +15,7 @@ public class Mamifero extends Animal {
 	public void locomover() {
 		System.out.println("Correndo");
 	}
-
+	@Override
 	public void alimentar() {
 		System.out.println("Mamando");
 	}

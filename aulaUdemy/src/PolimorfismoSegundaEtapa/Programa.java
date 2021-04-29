@@ -6,6 +6,11 @@ public class Programa {
 		
 		Mamifero mamifero = new Mamifero();
 		mamifero.locomover();
+		mamifero.idade = 2;
+		mamifero.alimentar();
+		mamifero.emitirSom();
+		
+		System.out.println(mamifero.idade);
 
 	}
 
