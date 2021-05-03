@@ -39,6 +39,9 @@ public class Programa2 {
 		System.out.println(g1.getSalario());
 		
 		System.out.println(controle.getTotalBonus());
+		
+		SistemaInterno si = new SistemaInterno();
+		si.autenticaUsuario(g1);
 	}
 
 }

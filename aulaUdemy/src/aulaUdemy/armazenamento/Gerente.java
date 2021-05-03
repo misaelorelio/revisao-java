@@ -1,6 +1,6 @@
 package aulaUdemy.armazenamento;
 
-public class Gerente extends Funcionario {
+public class Gerente extends FuncionarioAutenticavel {
 
 
 	public double bonifica() {
