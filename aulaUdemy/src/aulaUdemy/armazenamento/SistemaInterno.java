@@ -2,7 +2,7 @@ package aulaUdemy.armazenamento;
 
 public class SistemaInterno {
 
-	public void autenticaUsuario(FuncionarioAutenticavel fa) {
+	public void autenticaUsuario(Autenticavel fa) {
 		
 		String login = "user";
 		String senha = "1234";

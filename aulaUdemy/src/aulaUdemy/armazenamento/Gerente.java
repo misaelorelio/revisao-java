@@ -1,6 +1,6 @@
 package aulaUdemy.armazenamento;
 
-public class Gerente extends FuncionarioAutenticavel {
+public class Gerente extends Funcionario implements Autenticavel {
 
 
 	public double bonifica() {
@@ -27,6 +27,12 @@ public class Gerente extends FuncionarioAutenticavel {
 			System.out.println("Valor inválido");
 			return false;
 		}
+	}
+
+	@Override
+	public boolean autentica(String login, String senha) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	
