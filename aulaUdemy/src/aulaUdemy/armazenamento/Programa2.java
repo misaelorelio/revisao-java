@@ -15,8 +15,6 @@ public class Programa2 {
 		g1.setDataEntrada("12/32/4321");
 		g1.nome = "Misael";
 		g1.estaNaEmpresa = true;
-		g1.setLogin("123");
-		g1.setSenha("123");
 		g1.setSalario(5000.0);
 		
 		g1.autentica("123", "123");	

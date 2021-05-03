@@ -1,6 +1,6 @@
 package Banco;
 
-public class Conta {
+public class Conta implements Servicos {
 
 	private int numeroConta;
 	private Cliente titular;
@@ -30,7 +30,8 @@ public class Conta {
 		this.saldo = saldo;
 	}
 
-	boolean sacar(double valor) {
+	@Override
+	public boolean sacar(double valor) {
 		if (saldo >= valor) {
 			saldo = saldo - valor;
 			return true;
@@ -39,11 +40,14 @@ public class Conta {
 		}
 	}
 
-	void depositar(double valor) {
+	@Override
+	public void depositar(double valor) {
 		saldo = saldo + valor;
+
 	}
 
-	boolean transferir(Conta contaDestino, double valor) {
+	@Override
+	public boolean transferir(Conta contaDestino, double valor) {
 		if (saldo >= valor) {
 			saldo -= valor;
 			contaDestino.saldo += valor;
@@ -53,4 +57,5 @@ public class Conta {
 
 		}
 	}
+
 }
