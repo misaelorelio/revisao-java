@@ -2,7 +2,7 @@ package EstudoInterface;
 
 public interface Veiculo {
 
-	String getNome();
-	
+	String getNome(String nome);
+
 	String getId();
 }
