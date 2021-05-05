@@ -1,9 +1,9 @@
-package Banco;
+package BancoReforcandoEstudos;
 
 public class Cliente {
 
-	private String nome;
-	private String cpf;
+	protected String nome;
+	protected String cpf;
 
 	public String getNome() {
 		return nome;
@@ -20,5 +20,4 @@ public class Cliente {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-
 }
