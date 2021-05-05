@@ -10,6 +10,7 @@ public class AplicacaoPrograma {
 		conta.sacar(200);
 		conta.nome = "Misael";
 		conta.cpf = "03303030303";
+		conta.depositar(100);
 		
 		
 		System.out.println(conta.cpf);
