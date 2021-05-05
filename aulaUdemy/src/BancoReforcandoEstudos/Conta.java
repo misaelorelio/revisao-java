@@ -1,10 +1,10 @@
 package BancoReforcandoEstudos;
 
-public class Conta extends Cliente implements Servico {
+public class Conta implements Servico {
 
 	private int numeroConta;
 	private Cliente titular;
-	private double saldo;
+	public double saldo;
 
 	public int getNumeroConta() {
 		return numeroConta;
@@ -32,24 +32,31 @@ public class Conta extends Cliente implements Servico {
 
 	@Override
 	public boolean sacar(double valor) {
-		if (this.saldo >= valor) {
+		if(saldo >= valor) {
 			saldo = saldo - valor;
-			System.out.println("Saque realizado com sucesso");
-		} else {
-			System.out.println("Saldo insuficiente");
+			return true;
 		}
+		else {
 		return false;
+		}
 	}
 
 	@Override
 	public void depositar(double valor) {
-		saldo += valor;
-
+		saldo +=valor;
+		
 	}
 
 	@Override
-	public boolean transferir(Banco.Conta contaDestino, double valor) {
-		// TODO Auto-generated method stub
+	public boolean transferir(Conta contaDestino, double valor) {
+		if(saldo >= valor) {
+			saldo =  saldo - valor;
+			contaDestino.saldo += valor;
+			return true;
+		}
+		else {
 		return false;
+		}
 	}
+
 }

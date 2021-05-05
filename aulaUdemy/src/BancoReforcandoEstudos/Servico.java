@@ -1,7 +1,5 @@
 package BancoReforcandoEstudos;
 
-import Banco.Conta;
-
 public interface Servico {
 
 	boolean sacar(double valor);
