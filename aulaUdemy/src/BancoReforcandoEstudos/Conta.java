@@ -4,7 +4,7 @@ public class Conta implements Servico {
 
 	private int numeroConta;
 	private Cliente titular;
-	public double saldo;
+	private double saldo;
 
 	public int getNumeroConta() {
 		return numeroConta;
